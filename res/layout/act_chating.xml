@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/act_chating_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="活动讨论区"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:background="#f2f2f2"
+        android:textColor="#000"
+        />
+    <ListView 
+        android:id="@+id/act_chating_list"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        >
+    </ListView>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        >
+		<EditText 
+		    android:id="@+id/act_chating_edit"
+		    android:layout_marginLeft="10dp"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:hint="请输入评论内容"
+		    android:layout_height="wrap_content"
+		    android:background="@null"
+		    />
+		<ImageView 
+		    android:id="@+id/act_chating_save"
+		    android:layout_width="25dp"
+		    android:layout_height="25dp"
+		    android:src="@drawable/act_start_msg_save"
+		    android:onClick="true"/>
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#00f"
+    	android:layout_marginLeft="5dp"
+    	android:layout_marginRight="5dp"
+    	android:layout_marginBottom="5dp"
+    	/>
+</LinearLayout>

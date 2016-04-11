@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/longin"
+   	>
+    <ImageView 
+        android:id="@+id/act_main_image_1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:background="@drawable/longin"/>
+
+    <ImageView
+        android:id="@+id/act_name_icon_Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:background="@drawable/bai_a" />
+    <ImageView
+        android:id="@+id/act_name_wb_Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/wb" />
+    
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/act_name_register_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_guide_zx"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="注册"
+            android:textSize="16sp"
+            android:textColor="#ffffff" 
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/act_name_longin_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_guide_dl"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="16sp"
+            android:text="登陆" 
+            android:onClick="true"/>
+    </LinearLayout>
+
+</RelativeLayout>

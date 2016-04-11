@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/act_home_viewpager"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1">
+	</android.support.v4.view.ViewPager>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="54dp"
+	    android:orientation="horizontal"
+	    android:gravity="center">
+	    <LinearLayout
+	        android:id="@+id/act_home_home"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:orientation="vertical"
+	        android:background="#272727">
+	        <ImageView 
+	            android:id="@+id/act_home_home_iv"
+	            android:layout_width="25dp"
+	            android:layout_height="25dp"
+	            android:background="@drawable/home_home_liang"
+	            android:layout_marginTop="2dp"/>
+	        <TextView
+	            android:id="@+id/act_home_home_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="主页"
+	            android:textSize="13sp"
+	            android:textColor="#ffffff" />
+
+	    </LinearLayout>
+	    
+	   
+	    
+	    <LinearLayout 
+	         android:id="@+id/act_home_message"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:background="#272727">
+	        <ImageView 
+	            android:id="@+id/act_home_message_iv"
+	            android:layout_width="25dp"
+	            android:layout_height="25dp"
+	            android:background="@drawable/home_message_bu"
+	            android:layout_marginTop="2dp"/>
+	        <TextView 
+	            android:id="@+id/act_home_message_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="消息"
+	            android:textSize="13sp"
+	            android:textColor="#5E5E5E"/>
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:id="@+id/act_home_sendgather"
+	        android:layout_width="50dp"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:background="#272727"
+	        >
+	        <ImageView 
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:src="@drawable/myissue_jia"/>
+	        
+	    </LinearLayout>
+	     <LinearLayout 
+	         android:id="@+id/act_home_personal"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:background="#272727">
+	        <ImageView 
+	            android:id="@+id/act_home_personal_iv"
+	            android:layout_width="25dp"
+	            android:layout_height="25dp"
+	            android:background="@drawable/home_geren_bu"
+	            android:layout_marginTop="2dp"/>
+	        <TextView 
+	            android:id="@+id/act_home_personal_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="个人"
+	            android:textSize="13sp"
+	            android:textColor="#5E5E5E"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/act_home_settings"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:background="#272727">
+	        <ImageView 
+	            android:id="@+id/act_home_settings_iv"
+	            android:layout_width="25dp"
+	            android:layout_height="25dp"
+	            android:background="@drawable/home_settings_bu"
+	            android:layout_marginTop="2dp"/>
+	        <TextView 
+	            android:id="@+id/act_home_settings_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="更多"
+	            android:textSize="13sp"
+	            android:textColor="#5E5E5E"/>
+	    </LinearLayout>
+	</LinearLayout>
+    
+
+</LinearLayout>

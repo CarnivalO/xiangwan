@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+     <EditText
+        android:id="@+id/act_baidu_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:background="@drawable/edit_shape"
+		android:padding="10dp"
+		android:gravity="center"
+		android:text="北京"
+		/>
+    <EditText
+        android:id="@+id/act_baidu_edit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+		android:background="@drawable/edit_shape"
+		android:padding="10dp"
+		android:layout_marginLeft="10dp"
+		android:gravity="center"
+		android:hint="请输入位置"
+        />
+        <ImageView 
+            android:id="@+id/act_baidu_sou"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/id_search"
+            android:background="#c2c2c2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:onClick="true"
+            />
+    </LinearLayout>
+    
+<com.baidu.mapapi.map.MapView  
+    android:id="@+id/bmapView"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:clickable="true" />
+</LinearLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/act_item_show_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="返回" />
+
+        <TextView
+            android:id="@+id/act_item_show_gathername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="活动名称"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/act_item_show_canyu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="参与"
+                android:textColor="#000"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/act_item_show_guanli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="管理"
+                android:textColor="#000"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/act_item_show_gatherimg"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/beishang" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <com.wjn.view.MyImageView
+                    android:id="@+id/act_item_show_usericon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/head" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+ 					<TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="活动简介"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/act_item_show_gathertitle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:text="活动简介......"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+			<View 
+			    android:layout_width="fill_parent"
+			    android:layout_height="2dp"
+			    android:background="@drawable/colorlinleft"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@+id/act_item_show_pinglun"
+                    android:padding="4dp" >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/frag_icon_comment" />
+
+                    <TextView
+                        android:id="@+id/act_item_show_pinglun_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="0"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="fill_parent"
+                    android:background="#f2f2f2" />
+
+                <LinearLayout
+                    
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="4dp" >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/loveoff" />
+
+                    <TextView
+                        android:id="@+id/act_item_show_loves"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="0"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="fill_parent"
+                    android:background="#f2f2f2" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="4dp" >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/frag_icon_ren" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="0"
+                        android:textColor="#000"
+                        android:id="@+id/act_item_show_per"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="fill_parent"
+                    android:background="#f2f2f2" />
+
+                <LinearLayout
+                    android:id="@+id/act_item_show_gatherRmb"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="4dp" >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/frag_icon_rmb" />
+
+                    <TextView
+                        android:id="@+id/act_item_show_gatherRmb_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="0"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+            	<View 
+			    android:layout_width="fill_parent"
+			    android:layout_height="2dp"
+			    android:background="@drawable/colorlin"/>
+
+            <TextView
+                android:id="@+id/act_item_show_gatherintro"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="　　活动详细介绍，活动详细介绍，活动详细介绍，活动详细介绍，活动详细介绍，活动详细介绍，活动详细介绍，活动详细介绍，活动详细介绍，活动详细介绍，活动详细介绍，活动详细介绍。"
+                android:textColor="#000" />
+
+            <Button
+                android:onClick="butOnClick"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/but_selector"
+                android:padding="10dp"
+                android:text="讨论区" />
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

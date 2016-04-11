@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2" >
+    
+<RelativeLayout
+    android:id="@+id/xlist_item_rela"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#d2d2d2"
+    >
+    <ImageView 
+        android:id="@+id/item_gatherimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/hahaha"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:id="@+id/item_gathername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打球！"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/xlist_item_linear"
+        android:textColor="#fff"/>
+
+    <ImageView 
+        android:id="@+id/item_gatherlove"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/loveoff"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        />
+    
+    <LinearLayout 
+        android:id="@+id/xlist_item_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="7dp"
+        >
+        <TextView
+            android:id="@+id/item_gathersite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="西单 篮球场"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        />
+        <TextView 
+            android:id="@+id/item_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="999km"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginLeft="20dp"
+            />
+        
+    </LinearLayout>
+    <TextView
+        android:id="@+id/item_rmb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/item_yuan"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        />
+        <TextView
+        android:id="@+id/item_yuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="元"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        />
+</RelativeLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+     android:background="@drawable/itemlincolor"
+     android:gravity="center_vertical"
+     android:layout_marginTop="195dp"
+     >
+    <com.wjn.view.MyImageView 
+        android:id="@+id/item_usericon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/head"
+        android:layout_marginLeft="13dp"
+        />
+    <TextView
+        android:id="@+id/item_gathertitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="打篮球，锻炼身体，提高球技"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+</LinearLayout>
+</RelativeLayout>

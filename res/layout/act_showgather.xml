@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#fff">
+    
+    <TextView 
+        android:id="@+id/act_showgather_title"
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="xxxx"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="#f2f2f2"/>
+	<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <ImageView 
+        android:id="@+id/act_showgather_dialog"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/id_loading1"
+        android:scaleType="fitXY"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        />
+        <TextView 
+        android:id="@+id/act_showgather_null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="加载中"
+        android:gravity="center"
+        android:layout_below="@id/act_showgather_dialog"
+        />
+        <ListView 
+            android:id="@+id/act_showgather_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            
+        </ListView>
+    </RelativeLayout>
+</LinearLayout>

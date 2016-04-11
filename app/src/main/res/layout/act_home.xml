@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/act_home_viewpager"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1">
+	</android.support.v4.view.ViewPager>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="54dp"
+	    android:orientation="horizontal"
+	    android:gravity="center">
+	    <LinearLayout
+	        android:id="@+id/act_home_home"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:orientation="vertical"
+	        android:background="#272727">
+	        <ImageView 
+	            android:id="@+id/act_home_home_imageview"
+	            android:layout_width="25dp"
+	            android:layout_height="25dp"
+	            android:background="@drawable/main_bottom_tab_k1"
+	            android:layout_marginTop="2dp"/>
+	        <TextView
+	            android:id="@+id/act_home_home_textview"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="主页"
+	            android:textSize="13sp"
+	            android:textColor="#ffffff" />
+
+	    </LinearLayout>
+	    
+	   
+	    
+	    <LinearLayout 
+	         android:id="@+id/act_home_find"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:background="#272727">
+	        <ImageView 
+	            android:id="@+id/act_home_find_imageview"
+	            android:layout_width="25dp"
+	            android:layout_height="25dp"
+	            android:background="@drawable/main_bottom_tab_g2"
+	            android:layout_marginTop="2dp"/>
+	        <TextView 
+	            android:id="@+id/act_home_find_textview"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="发现"
+	            android:textSize="13sp"
+	            android:textColor="#5E5E5E"/>
+	    </LinearLayout>
+	    
+	     <LinearLayout 
+	         android:id="@+id/act_home_my"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:background="#272727">
+	        <ImageView 
+	            android:id="@+id/act_home_my_imageview"
+	            android:layout_width="25dp"
+	            android:layout_height="25dp"
+	            android:background="@drawable/main_bottom_tab_g3"
+	            android:layout_marginTop="2dp"/>
+	        <TextView 
+	            android:id="@+id/act_home_my_textview"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="个人"
+	            android:textSize="13sp"
+	            android:textColor="#5E5E5E"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/act_home_more"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:background="#272727">
+	        <ImageView 
+	            android:id="@+id/act_home_more_imageview"
+	            android:layout_width="25dp"
+	            android:layout_height="25dp"
+	            android:background="@drawable/main_bottom_tab_g4"
+	            android:layout_marginTop="2dp"/>
+	        <TextView 
+	            android:id="@+id/act_home_more_textview"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="更多"
+	            android:textSize="13sp"
+	            android:textColor="#5E5E5E"/>
+	    </LinearLayout>
+	</LinearLayout>
+    
+
+</LinearLayout>
